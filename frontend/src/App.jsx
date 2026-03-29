@@ -1,5 +1,5 @@
 import PostCard from "./components/PostCard"
-import NavBar from "./components/navbar"
+import Layout from "./components/Layout"
 
 function App() {
   const dummyPost = {
@@ -11,9 +11,8 @@ function App() {
   }
 
   return (
-    <div className="max-w-auto mx-auto p-8">
-      <NavBar />
-      <PostCard post={dummyPost} />
+    <div className="max-w-auto mx-auto">
+      <Layout />
     </div>
   )
 }
