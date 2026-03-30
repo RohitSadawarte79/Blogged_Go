@@ -12,8 +12,6 @@ function Layout({ children }) {
 
             <NavBar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
 
-
-            {/* Pass the state to the Sidebar so it becomes an overlay drawer */}
             <Sidebar isSidebarOpen={isSidebarOpen} />
 
             <main className="p-4 md:p-8 flex-1 w-full mt-[60px]">
@@ -22,8 +20,16 @@ function Layout({ children }) {
 
             <Footer />
 
+
+            <div className="fixed z-[60] top-[18px] right-6 sm:hidden flex items-center justify-center cursor-pointer text-[#a3a3a3] hover:text-[#ef4444] transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+            </div>
+
             <motion.div
-                className="fixed z-[60] top-[8px] right-6 lg:right-12 flex items-center justify-center h-[44px] w-[44px] cursor-pointer group"
+                className="fixed z-[60] top-[8px] max-sm:hidden right-6 lg:right-12 flex items-center justify-center h-[44px] w-[44px] cursor-pointer group"
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                 initial="rest"
                 animate={isSidebarOpen ? "open" : "rest"}
@@ -68,7 +74,10 @@ function Layout({ children }) {
                 >
                     <img className="w-full h-full object-cover rounded-full rotate-45 scale-[1]" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                 </motion.div>
+
             </motion.div>
+
+
         </div>
     )
 }

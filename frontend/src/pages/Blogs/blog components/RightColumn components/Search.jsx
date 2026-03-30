@@ -15,7 +15,7 @@ function Search() {
             transition={{ duration: 0.3 }}
         >
             <input
-                className="w-full bg-transparent text-white placeholder-neutral-500 px-5 py-4 outline-none rounded-none"
+                className="w-full bg-transparent text-sm md:text-base text-white placeholder-neutral-500 px-4 py-2 md:px-5 md:py-4 outline-none rounded-none"
                 type="Search"
                 placeholder="Search..."
                 onFocus={() => setIsFocused(true)}
@@ -29,10 +29,10 @@ function Search() {
                 }}
                 whileHover={{ scale: 1.15, color: "#ef4444" }}
                 transition={{ duration: 0.2 }}
-                className="pr-5 outline-none"
+                className="pr-4 md:pr-5 outline-none"
             >
                 <svg
-                    className="w-5 h-5 pointer-events-none"
+                    className="w-4 h-4 md:w-5 md:h-5 pointer-events-none"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"

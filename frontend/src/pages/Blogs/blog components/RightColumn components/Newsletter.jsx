@@ -3,7 +3,7 @@ import React from "react";
 
 function NewsLetter() {
     return (
-        <div className="pt-6 border-t border-red-500 max-w-md #141414">
+        <div className="pt-6  border-t max-lg:border-none border-red-500 max-w-md #141414">
             <div className="flex items-center gap-3 mb-2">
                 <h2 className="text-lg font-bold text-white uppercase tracking-wide">
                     Subscribe to the Log

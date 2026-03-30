@@ -7,7 +7,7 @@ function RightColumn() {
     return (
         <>
 
-            <div className="Container inline-flex flex-col gap-10">
+            <div className="hidden lg:flex w-[30vw] flex-col gap-10">
                 <Search />
                 <TopStories />
                 <NewsLetter />

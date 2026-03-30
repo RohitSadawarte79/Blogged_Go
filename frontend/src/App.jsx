@@ -2,6 +2,7 @@ import PostCard from "./components/PostCard"
 import Layout from "./components/Layout"
 import Blogs from "./pages/Blogs/blogs"
 import Footer from "./components/Footer"
+import BottomBar from "./components/bottomBar"
 
 function App() {
   const dummyPost = {
@@ -17,6 +18,9 @@ function App() {
       <Layout>
         <Blogs />
       </Layout>
+      <div className="sm:hidden bottom-bar-mobile">
+        <BottomBar />
+      </div>
     </div>
   )
 }
