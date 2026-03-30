@@ -6,7 +6,7 @@ function Sidebar({ isSidebarOpen }) {
         <AnimatePresence>
             {isSidebarOpen && (
                 <>
-                    {/* Dark Blurred Backdrop */}
+
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 0.5 }}
@@ -14,7 +14,7 @@ function Sidebar({ isSidebarOpen }) {
                         className="fixed inset-0 bg-black z-[40] pointer-events-none"
                     />
 
-                    {/* Sliding Drawer Panel */}
+
                     <motion.aside
                         initial={{ x: "100%" }}
                         animate={{ x: 0 }}

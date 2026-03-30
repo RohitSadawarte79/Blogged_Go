@@ -21,8 +21,8 @@ function Layout({ children }) {
             <Footer />
 
 
-            <div className="fixed z-[60] top-[18px] right-6 sm:hidden flex items-center justify-center cursor-pointer text-[#a3a3a3] hover:text-[#ef4444] transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="fixed z-[60] top-[18px] right-6 sm:hidden flex items-center justify-center cursor-pointer text-[#a3a3a3] hover:text-red-500 active:text-red-500 transition-colors group select-none">
+                <svg className="group-hover:scale-110 group-active:scale-90 transition-all duration-200" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                 </svg>

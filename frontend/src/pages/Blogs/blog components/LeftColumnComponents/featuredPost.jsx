@@ -52,7 +52,7 @@ function FeaturedPost({ post = dummyPost }) {
                 </div>
 
 
-                <button className="w-full md:w-[200px] mt-2 py-2.5 md:py-3.5 border-2 border-[#131313] text-[10px] md:text-xs text-[#131313] font-bold tracking-widest uppercase hover:bg-[#131313] hover:text-[#F4F1EA] hover:border-[#131313] transition-all duration-300 active:scale-[0.98] flex items-center justify-center gap-2 group cursor-pointer">
+                <button className="w-full active:bg-[#131313] active:text-[#F4F1EA] md:w-[200px] mt-2 py-2.5 md:py-3.5 border-2 border-[#131313] text-[10px] md:text-xs text-[#131313] font-bold tracking-widest uppercase hover:bg-[#131313] hover:text-[#F4F1EA] hover:border-[#131313] transition-all duration-300 active:scale-[0.98] flex items-center justify-center gap-2 group cursor-pointer">
                     Read Full Post
                     <svg className="w-4 h-4 opacity-100 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
