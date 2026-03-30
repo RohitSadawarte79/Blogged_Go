@@ -1,5 +1,7 @@
 import PostCard from "./components/PostCard"
 import Layout from "./components/Layout"
+import Blogs from "./pages/Blogs/blogs"
+import Footer from "./components/Footer"
 
 function App() {
   const dummyPost = {
@@ -12,7 +14,9 @@ function App() {
 
   return (
     <div className="max-w-auto mx-auto">
-      <Layout />
+      <Layout>
+        <Blogs />
+      </Layout>
     </div>
   )
 }
